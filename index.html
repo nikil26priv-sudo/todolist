@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List with Progress</title>
+    <title>Pastel To-Do List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>💼 Your To-Do List 📋</h1>
+        <h1>📝 To-Do List</h1>
 
-        <!-- Input Section -->
+        <!-- Add Task Section -->
         <div class="add-task">
-            <input type="text" id="task-input" placeholder="Enter a new task...">
+            <input type="text" id="task-input" placeholder="Add a new task...">
             <button onclick="addTask()">Add Task</button>
         </div>
 
-        <!-- To-Do List Display -->
+        <!-- Display Task List -->
         <ul id="task-list">
-            <!-- Tasks will be displayed here dynamically -->
+            <!-- Tasks will be dynamically inserted here -->
         </ul>
 
-        <!-- Progress Section -->
-        <div id="progress">
-            <p>📝 Progress: <span id="completion-percentage">0.00</span>% completed</p>
+        <!-- Progress Bar -->
+        <div id="progress-container">
+            <p>📊 Tasks Completed: <span id="completion-percentage">0.00</span>%</p>
         </div>
 
     </div>
